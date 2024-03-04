@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>My Portfolio Page</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.css" integrity="sha512-tx5+1LWHez1QiaXlAyDwzdBTfDjX07GMapQoFTS74wkcPMsI3So0KYmFe6EHZjI8+eSG0ljBlAQc3PQ5BTaZtQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<body>
+  <div id="cursor"></div>
+  <header id="header">
+    <nav id="navbar">
+      <ul>
+        <li>
+          <a class="nav-link" href="#css-html" id="css-header">|CSS and HTML Projects|</a>
+        </li>
+        <li>
+          <a class="nav-link" href="#javascript" id="javascript-header">|Javascript React Projects|</a>
+        </li>
+        <li>
+          <a class="nav-link" href="#D3" id="D3-header">|D3 Projects|</a>
+        </li>
+        <li>
+          <a class="nav-link" href="#contact" id="contact-header">|Contact|</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+    <section id="welcome-section">
+      <div id = "welcome-box">
+        <img id="welcome-image" src = "Myself.png"><img>
+        <div id = "welcome-text">
+      <h1 id ="welcome-title">Welcome to my portfolio page!</h1>
+      <p id = 'welcome-paragraph'></p></div>
+      </div>
+    </section>
+<main>
+    <section id = "projects">
+      <div id = "html-container">
+  <h2 id = "css-html">CSS and HTML projects</h2>
+    <div id = flex-container>
+      <div id="tribute-page" class = "html-tile">
+        <div class = "image-container">
+        <img id = "T" class = "image" src="Tribute_page.jpg" onclick="redirectToLink('https://codepen.io/doingmybest/full/XWRwQbJ')"></img>
+      </div>
+  <a href = "https://codepen.io/doingmybest/full/XWRwQbJ" target = "_blank"id = "profile-link" class = "website-link">Tribute page</a>
+  </div>
+    <div id="product-page" class = "html-tile">
+      <div class = "image-container">
+      <img id = "P" class = "image" src="Product_page.jpg" onclick="redirectToLink('https://codepen.io/doingmybest/full/PojoZBj')"></img>
+        </div>
+      <a href = "https://codepen.io/doingmybest/full/PojoZBj" target = "_blank" class = "website-link">Product landing page</a>
+    </div>
+  <div id="technical-page" class = "html-tile">
+    <div class = "image-container">
+          <img id = "TD" class = "image" src = "Technical_page.jpg" onclick="redirectToLink('https://codepen.io/doingmybest/full/abwObBp')"></img>
+    </div>
+    <a href = "https://codepen.io/doingmybest/full/abwObBp" target = "_blank" class = "website-link" >Technical documentation page</a>
+    </div>
+    <div id="survey-form" class = "html-tile">
+      <div class = "image-container">
+      <img id ="S" class = "image" src = "Survey_page.jpg" onclick="redirectToLink('https://codepen.io/doingmybest/full/poPmmBW')"></img>
+      </div>
+  <a href = "https://codepen.io/doingmybest/full/poPmmBW" target = "_blank" class = "website-link">Survey form</a>
+  </div>
+    </div>
+      </div>
+      
+  <h2 id = "javascript">Javascript projects</h2>
+<div id="flex-container2">
+  <div id="random-page" class="javascript-tile">
+    <div class="image-container">
+    <img id="R" class = "image" src = "Random_page.jpg" onclick="redirectToLink('https://codepen.io/doingmybest/full/zYajOGg')"></img>
+  </div>
+    <a href="https://codepen.io/doingmybest/full/zYajOGg" target="_blank" class = "website-link">Random quote machine</a>
+  </div>
+  <div id="markdown-page" class="javascript-tile">
+    <div class = "image-container">
+    <img id="M" class = "image" src = "Markdown_page.jpg" onclick="redirectToLink('https://codepen.io/doingmybest/full/qBKLaJR')"></img>
+</div>
+    <a href="https://codepen.io/doingmybest/full/qBKLaJR" target="_blank" class = "website-link">Markdown previewer</a>
+  </div>
+  <div id="calculator-page" class="javascript-tile">
+    <div class = "image-container">
+    <img id="C" class = "image" src = "Calculator_page.png" onclick="redirectToLink('https://codepen.io/doingmybest/full/yLqJpzg')"></img>
+</div>
+    <a href="https://codepen.io/doingmybest/full/yLqJpzg" target="_blank" class = "website-link">Calculator</a>
+  </div>
+  <div id="pomodoro-page" class="javascript-tile">
+    <div class = "image-container">
+    <img id="PC" class = "image" src = "Pomodoro.png" onclick="redirectToLink('https://codepen.io/doingmybest/full/ExpmRoZ')"></img>
+</div>
+    <a href="https://codepen.io/doingmybest/full/ExpmRoZ" target="_blank" class = "website-link">Pomodoro clock</a>
+  </div>
+</div>
+ 
+       <div id = "D3-container">
+ <h2 id = "D3">D3 projects</h2>
+<div id="flex-container3">
+  <div id="GDP-page" class="D3-tile">
+    <div class = "image-container">
+    <img id="GDP" class = "image" src = "GDP_page.png" onclick="redirectToLink('https://codepen.io/doingmybest/full/QWVBRyb')"></img>
+  </div>
+    <a href="https://codepen.io/doingmybest/full/QWVBRyb" target="_blank" class = "website-link">US GDP Bar Chart</a>
+  </div>
+  <div id="warming-page" class="D3-tile">
+    <div class = "image-container">
+    <img id="W" class = "image" src = "Heatmap.png"onclick="redirectToLink('https://codepen.io/doingmybest/full/LYJoEOd')"></img>
+         </div>
+    <a href="https://codepen.io/doingmybest/full/LYJoEOd" target="_blank" class = "website-link">Global Warming Heatmap</a>
+  </div>
+  <div id="doping-page" class="D3-tile">
+    <div class = "image-container">
+    <img id="D" class = "image" src = "Scatterplot.jpg" onclick="redirectToLink('https://codepen.io/doingmybest/full/dyqgOJe')"></img>
+</div>
+    <a href="https://codepen.io/doingmybest/full/dyqgOJe" target="_blank" class = "website-link">Doping Scatterplot</a>
+  </div>
+  <div id="movie-page" class="D3-tile">
+    <div class = "image-container">
+    <img id="M" class = "image" src = "Movies.png" onclick="redirectToLink('https://codepen.io/doingmybest/full/ZEmZdpo')"></img>
+</div>
+    <a href="https://codepen.io/doingmybest/full/ZEmZdpo" target="_blank" class = "website-link">Treemap Diagram</a>
+  </div>
+</div>  
+      </div>
+  </section>
+</main>
+    <footer>
+    <div class="footer-logos"> 
+      <div class="logo"></div>
+    </div>
+    <div class="footer-contact">
+        <a id="contact" href="mailto:a.mangold.freelancing@gmail.com">a.mangold.freelancing@gmail.com</a>
+    </div>
+</footer>
+<script src="script.js"></script>
+  </body>

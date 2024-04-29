@@ -1,5 +1,5 @@
 const textElement = document.getElementById('welcome-paragraph');
-const textToType = "I am excited to showcase my freecodecamp projects here. Click on the links in the boxes to be directed to the corresponding CodePen projects.";
+const textToType = "I am excited to showcase my Freecodecamp and Odin projects here. Click on the links in the boxes to be directed to the corresponding CodePen or Github Page.";
 let index = 0;
 
 function typeText() {

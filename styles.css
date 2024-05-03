@@ -243,7 +243,7 @@ main {
   position: relative;
   display: grid;
   grid-template-rows: 75% 25%;
-  grid-template-columns: 5% 90% 5%;
+  grid-template-columns: 5% 95% 5%;
   border: groove 1px;
   box-shadow: 3px 3px 3px black;
   height: 60%;
@@ -412,7 +412,7 @@ a {
   }
 
   #welcome-box {
-    min-height: 5rem; 
+    min-height: 4rem; 
     padding: 0.5rem 2rem; 
     font-size: 0.9rem; 
     width: 60%; 
@@ -429,17 +429,22 @@ a {
   #flex-container, #flex-container2, #flex-container3 {
     flex-direction: column; 
     gap: 1.5em;
-    height: auto; 
+    height: auto%; 
     width: 100%; 
     left: 0; 
   }
 
-.html-tile, .javascript-tile, D3-tile {
+  .image-container {
+    height: 5rem;
+    width: 5rem;
+  }
+
+.html-tile, .javascript-tile, .D3-tile {
     width: 100%;
-    max-width: 200px; 
+    max-width: 50%; 
     margin: 0 auto;
-  font-size: 0.8rem;
-  display: flex;
+    font-size: 0.8rem;
+    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;

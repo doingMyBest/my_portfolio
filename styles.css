@@ -144,9 +144,9 @@ li {
 
 #welcome-box {
   animation: slide-animation-top 3s ease-in-out;
-  height: 25rem; /* Equal to the width for a round shape */
-  width: 35rem; /* Equal to the height for a round shape */
-  padding: 1rem; /* Adjust padding as needed */
+  height: 25rem;
+  width: 35rem; 
+  padding: 1rem; 
   font: 1rem/150%;
   opacity: 0.98;
   position: relative;
@@ -156,7 +156,7 @@ li {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  border-radius: 5%; /* Ensures round shape */
+  border-radius: 5%; 
 }
 
 #welcome-text {
@@ -207,10 +207,21 @@ h2 {
   background-color: #c8cbae;
 }
 
-#flex-container, #flex-container2, #flex-container3 {
+#flex-container, #flex-container3 {
   display: flex;
   flex-direction: row;
-  gap: 2%;
+  gap: 1rem;
+  justify-content: center;
+  height: 25rem;
+  position: relative;
+  width: 90%;
+  left: 5%;
+}
+
+#flex-container2 {
+  display: flex;
+  flex-direction: row;
+  gap: 0.5rem;
   justify-content: center;
   height: 25rem;
   position: relative;
@@ -357,8 +368,8 @@ display: inline-block;
   top: 40%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 10rem;
-  height: 10rem;
+  width: 9rem;
+  height: 9rem;
   overflow: hidden;
   border-radius: 50%;
 }
@@ -401,7 +412,7 @@ a {
 
 @media only screen and (max-width: 575px) {
   html {
-    font-size: 10px;
+    font-size: 8px;
   }
   input, main, .nav-link {
     font-size: 1.2em; 
@@ -415,10 +426,20 @@ a {
     min-height: 4rem; 
     padding: 0.5rem 2rem; 
     font-size: 0.9rem; 
-    width: 60%; 
-    top: 30%;
+    width: 70%; 
+    top: 60%;
     right: 40%;
   }
+
+#welcome-image {
+  width: 10rem;
+  height: 10rem;
+}
+
+#welcome-section {
+  position: relative;
+  height: 35rem;
+}
 
   #welcome-box::before,
   #welcome-box::after {
@@ -426,17 +447,25 @@ a {
   }
 
 
-  #flex-container, #flex-container2, #flex-container3 {
+  #flex-container, #flex-container3 {
     flex-direction: column; 
     gap: 1.5em;
-    height: auto%; 
+    height: 40vh; 
+    width: 100%; 
+    left: 0; 
+  }
+
+  #flex-container2 {
+    flex-direction: column;
+    gap: 0.5em;
+    height: 40vh; 
     width: 100%; 
     left: 0; 
   }
 
   .image-container {
-    height: 5rem;
-    width: 5rem;
+    height: 70%;
+    width: 30%;
   }
 
 .html-tile, .javascript-tile, .D3-tile {
@@ -444,14 +473,19 @@ a {
     max-width: 50%; 
     margin: 0 auto;
     font-size: 0.8rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+
+
   }
     .image::before {
     font-size: 4em;
     margin-top: 0.2rem;
     margin: 0 auto;
+  }
+
+  #html-container, #javascript-container, #D3-container {
+    height: 50vh;
+  }
+  li {
+    font-size: 0.9rem;
   }
 }

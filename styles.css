@@ -609,6 +609,35 @@ a {
         top: 40%;
         left: 50%;
         transform: translate(-50%, -50%);
+        width: 60%;
+        height: 60%;
+        overflow: hidden;
+        border-radius: 50%;
+      }
+      body::before {
+        left: 20vw;
+        width: 65vw;
+      }
+      #projects {
+        width: 65vw;
+        margin-left: 15vw;
+      }
+      #welcome-box {
+        left: 55%;
+      }
+
+    }
+
+    @media only screen and (min-width: 1920px) {
+      html {
+        font-size: 15px;
+      }
+
+      .image-container {
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%, -50%);
         width: 50%;
         height: 60%;
         overflow: hidden;

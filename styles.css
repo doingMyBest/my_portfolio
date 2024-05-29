@@ -201,8 +201,8 @@ li {
 }
 
 h2 {
-  font-size: 2em; /* Slightly smaller for subtlety */
-  color: #333; /* Dark text for contrast */
+  font-size: 2em; 
+  color: #333; 
   text-align: center;
 }
 
@@ -386,7 +386,7 @@ display: inline-block;
 }
 
 .image:hover {
-    transform: scale(1.1); /* Zoom in effect on hover */
+    transform: scale(1.1); 
 }
 
 a {
@@ -575,167 +575,6 @@ a {
       font-size: 0.9rem;
     }
   }
-  @media only screen and (max-width: 360px) {
-    
-  html {
-    font-size: 6px;
-  }
-  input, main, .nav-link {
-    font-size: 1.2em; 
-  }
-
-  .nav-link:hover {
-    font-size: 13px; 
-  }
-
-  #welcome-box {
-    min-height: 4rem; 
-    padding: 0.5rem 2rem; 
-    font-size: 0.9rem; 
-    width: 70%; 
-    top: 60%;
-    right: 40%;
-  }
-
-#welcome-image {
-  width: 10rem;
-  height: 10rem;
-}
-
-#welcome-section {
-  position: relative;
-  height: 35rem;
-}
-
-  #welcome-box::before,
-  #welcome-box::after {
-    font-size: 1.5rem; 
-  }
-
-
-  #flex-container, #flex-container3 {
-    flex-direction: column; 
-    gap: 1.5em;
-    height: 40vh; 
-    width: 100%; 
-    left: 0; 
-  }
-
-  #flex-container2 {
-    flex-direction: column;
-    gap: 0.5em;
-    height: 40vh; 
-    width: 100%; 
-    left: 0; 
-  }
-
-  .image-container {
-    height: 70%;
-    width: 30%;
-  }
-
-.html-tile, .javascript-tile, .D3-tile {
-    width: 100%;
-    max-width: 50%; 
-    margin: 0 auto;
-    font-size: 0.8rem;
-
-
-  }
-    .image::before {
-    font-size: 4em;
-    margin-top: 0.2rem;
-    margin: 0 auto;
-  }
-
-  #html-container, #javascript-container, #D3-container {
-    height: 50vh;
-  }
-  li {
-    font-size: 0.9rem;
-  }
-}
-
-  @media only screen and (min-width: 361px) and (max-width: 639px) {
-  
-    html {
-      font-size: 8px;
-    }
-    input, main, .nav-link {
-      font-size: 1.2em; 
-    }
-  
-    .nav-link:hover {
-      font-size: 13px; 
-    }
-  
-    #welcome-box {
-      min-height: 4rem; 
-      padding: 0.5rem 2rem; 
-      font-size: 0.9rem; 
-      width: 70%; 
-      top: 60%;
-      right: 40%;
-    }
-  
-  #welcome-image {
-    width: 10rem;
-    height: 10rem;
-  }
-  
-  #welcome-section {
-    position: relative;
-    height: 35rem;
-  }
-  
-    #welcome-box::before,
-    #welcome-box::after {
-      font-size: 1.5rem; 
-    }
-  
-  
-    #flex-container, #flex-container3 {
-      flex-direction: column; 
-      gap: 1.5em;
-      height: 40vh; 
-      width: 100%; 
-      left: 0; 
-    }
-  
-    #flex-container2 {
-      flex-direction: column;
-      gap: 0.5em;
-      height: 40vh; 
-      width: 100%; 
-      left: 0; 
-    }
-  
-    .image-container {
-      height: 70%;
-      width: 30%;
-    }
-  
-  .html-tile, .javascript-tile, .D3-tile {
-      width: 100%;
-      max-width: 50%; 
-      margin: 0 auto;
-      font-size: 0.8rem;
-  
-  
-    }
-      .image::before {
-      font-size: 4em;
-      margin-top: 0.2rem;
-      margin: 0 auto;
-    }
-  
-    #html-container, #javascript-container, #D3-container {
-      height: 50vh;
-    }
-    li {
-      font-size: 0.9rem;
-    }
-  }
     @media only screen and (min-width: 640px) and (max-width: 990px) {
       html {
         font-size: 8px;
@@ -761,6 +600,11 @@ a {
       #welcome-box {
         left: 55%;
       }
+
+      footer {
+        position:absolute;
+        bottom:0;
+      }
       
     }
 
@@ -774,7 +618,7 @@ a {
         top: 40%;
         left: 50%;
         transform: translate(-50%, -50%);
-        width: 40%;
+        width: 50%;
         height: 60%;
         overflow: hidden;
         border-radius: 50%;
